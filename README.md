@@ -1,18 +1,23 @@
-# Bookwell — Reusable Booking Platform Demo
+# Bookwell — configurable booking platform demo
 
-A polished front-end demo for the reusable, white-label, multi-tenant booking platform described in `reusable-booking-platform-spec.md`.
+A working browser demo of a reusable booking engine with interchangeable brands, industries, terminology, themes and layouts.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the folder with any static HTTP server.
+```bash
+npm run dev
+```
 
-## Demo scope
+Open `http://localhost:4173`.
 
-- Business owner dashboard
-- Appointment overview and statuses
-- Booking requests with approval interaction
-- New booking modal
-- Services and quick actions
-- Responsive mobile layout
+## Included
 
-The next implementation layer is the shared booking engine: tenant-aware data models, availability calculation, authentication/RBAC, payments, notifications, and embeddable business booking pages.
+- Two unrelated businesses proving multi-industry reuse
+- Live tenant, industry pack, theme and layout switching
+- Owner overview, calendar, bookings, offerings, team and customer records
+- Platform administration and tenant onboarding
+- Public booking journey with availability, customer capture and confirmation
+- Locally persisted bookings, records, settings and audit events
+- Responsive desktop and mobile layouts
+
+See `docs/ARCHITECTURE.md` for the production architecture. The demo uses local storage; production authentication, database isolation, payments and notification delivery remain backend implementation work.
