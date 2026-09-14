@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookwell — White-label booking platform demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="logo"><span class="logo-mark">B</span><span>bookwell</span></div>
+      <div class="workspace"><span class="avatar">AM</span><span><b>Amara Moon Studio</b><small>Business workspace</small></span><span class="chevron">⌄</span></div>
+      <nav>
+        <a class="active" href="#dashboard">⌂ <span>Overview</span></a>
+        <a href="#calendar">▣ <span>Calendar</span><em>3</em></a>
+        <a href="#bookings">◷ <span>Bookings</span></a>
+        <a href="#customers">♧ <span>Customers</span></a>
+        <a href="#services">✦ <span>Services</span></a>
+        <a href="#team">♙ <span>Team & availability</span></a>
+      </nav>
+      <div class="sidebar-bottom"><a href="#settings">⚙ <span>Business settings</span></a><a href="#help">? <span>Help centre</span></a><div class="admin-card"><small>PLATFORM ADMIN</small><b>Bookwell Console</b><span>100 businesses supported</span></div></div>
+    </aside>
+    <main>
+      <header class="topbar"><div class="mobile-logo">bookwell</div><div class="top-actions"><button class="icon-btn">⌕</button><button class="icon-btn">♧<i></i></button><div class="user">AM <span>Amara <small>Owner</small></span>⌄</div></div></header>
+      <section class="content" id="dashboard">
+        <div class="page-heading"><div><p class="eyebrow">MONDAY, 14 SEPTEMBER 2026</p><h1>Good morning, Amara <span>✦</span></h1><p class="muted">Here’s what’s happening at your studio today.</p></div><button class="primary" onclick="openBooking()">＋ New booking</button></div>
+        <div class="stats"><article><span class="stat-icon peach">◷</span><div><small>Today’s appointments</small><strong>12</strong><label class="up">↑ 8% <span>vs last Monday</span></label></div></article><article><span class="stat-icon lavender">↗</span><div><small>Today’s revenue</small><strong>R4,860</strong><label class="up">↑ 14% <span>vs last Monday</span></label></div></article><article><span class="stat-icon mint">◌</span><div><small>Pending requests</small><strong>3</strong><label class="warning">Needs attention</label></div></article><article><span class="stat-icon butter">♧</span><div><small>New customers</small><strong>8</strong><label class="up">↑ 22% <span>this month</span></label></div></article></div>
+        <div class="grid"><section class="panel schedule"><div class="panel-head"><div><h2>Today’s schedule</h2><p class="muted">Monday, 14 September</p></div><button class="text-btn">View calendar →</button></div><div class="timeline"><div class="time">09:00</div><div class="appointment confirmed"><div class="appointment-time">09:00 <small>— 10:00</small></div><div class="appointment-info"><b>Wash, Cut & Finish</b><span>Thandi Mokoena · Amara</span></div><span class="status confirmed-pill">Confirmed</span></div><div class="time">10:00</div><div class="appointment inprogress"><div class="appointment-time">10:15 <small>— 11:45</small></div><div class="appointment-info"><b>Signature Colour</b><span>Jess Daniels · Mia</span></div><span class="status progress-pill">In progress</span></div><div class="time">12:00</div><div class="appointment pending"><div class="appointment-time">12:30 <small>— 13:15</small></div><div class="appointment-info"><b>Silk Press</b><span>Naledi Khumalo · Amara</span></div><span class="status pending-pill">Pending</span></div><div class="time">14:00</div><div class="appointment confirmed"><div class="appointment-time">14:00 <small>— 16:00</small></div><div class="appointment-info"><b>Boho Knotless Braids</b><span>Sarah Jacobs · Mia</span></div><span class="status confirmed-pill">Confirmed</span></div></div></section><section class="panel requests"><div class="panel-head"><div><h2>Booking requests <span class="count">3</span></h2><p class="muted">Awaiting your approval</p></div><button class="text-btn">See all</button></div><div class="request"><span class="customer-avatar pink">SJ</span><div><b>Sarah Jacobs</b><span>Boho Knotless Braids · 14 Sep, 14:00</span><small>Requested 12 min ago</small></div><div class="request-actions"><button class="approve">✓</button><button class="decline">×</button></div></div><div class="request"><span class="customer-avatar blue">LP</span><div><b>Lerato Pillay</b><span>Wash, Cut & Finish · 15 Sep, 09:00</span><small>Requested 38 min ago</small></div><div class="request-actions"><button class="approve">✓</button><button class="decline">×</button></div></div><div class="request"><span class="customer-avatar yellow">NM</span><div><b>Nina Maseko</b><span>Consultation · 16 Sep, 11:30</span><small>Requested 1 hr ago</small></div><div class="request-actions"><button class="approve">✓</button><button class="decline">×</button></div></div></section></div>
+        <div class="bottom-grid"><section class="panel"><div class="panel-head"><div><h2>Popular services</h2><p class="muted">Last 30 days</p></div><button class="text-btn">Manage services →</button></div><div class="service-row"><span class="service-colour one"></span><div><b>Wash, Cut & Finish</b><small>48 bookings</small></div><strong>R680</strong><div class="bar"><i style="width:88%"></i></div></div><div class="service-row"><span class="service-colour two"></span><div><b>Signature Colour</b><small>32 bookings</small></div><strong>R1,450</strong><div class="bar"><i style="width:64%"></i></div></div><div class="service-row"><span class="service-colour three"></span><div><b>Silk Press</b><small>27 bookings</small></div><strong>R750</strong><div class="bar"><i style="width:52%"></i></div></div></section><section class="panel quick"><div class="panel-head"><div><h2>Quick actions</h2><p class="muted">Common tasks</p></div></div><button onclick="openBooking()">＋ Create a booking <span>→</span></button><button>♧ Add a customer <span>→</span></button><button>✦ Add a service <span>→</span></button><button>⚙ Update availability <span>→</span></button></section></div>
+      </section>
+    </main>
+  </div>
+  <dialog id="booking-dialog"><form method="dialog"><button class="close">×</button><p class="eyebrow">NEW BOOKING</p><h2>Create an appointment</h2><label>Customer<input placeholder="Search or add customer" /></label><label>Service<select><option>Wash, Cut & Finish — R680</option><option>Signature Colour — R1,450</option><option>Silk Press — R750</option></select></label><div class="form-row"><label>Date<input type="date" value="2026-09-14" /></label><label>Time<select><option>09:00</option><option>10:15</option><option>14:00</option></select></label></div><label>Staff member<select><option>Amara Moon</option><option>Mia Nkosi</option><option>Any available stylist</option></select></label><button class="primary full">Create booking</button></form></dialog>
+  <script>function openBooking(){document.getElementById('booking-dialog').showModal()} document.querySelectorAll('.approve').forEach(b=>b.onclick=()=>{b.closest('.request').style.opacity='.35';b.textContent='✓'});</script>
+</body></html>
